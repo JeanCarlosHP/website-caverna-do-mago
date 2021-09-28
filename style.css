@@ -117,3 +117,51 @@ main {
   width: 100%;
   height: 1px;
 }
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  height: 35.3rem;
+
+  background-color: var(--grey-medium);
+
+  text-align: end;
+}
+
+.footer-tittle {
+  font: bold 1.6rem 'Poppins';
+  color: var(--yellow);
+
+  margin-bottom: 0.8rem;
+}
+
+footer p {
+  font: normal 1.6rem 'Open Sans';
+  color: var(--soft-white);
+
+  margin-bottom: 0.4rem;
+}
+
+.business-hours {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.social div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.social i {
+  margin-right: 0.8rem;
+}
+
+#line-footer {
+  margin-right: 7.8rem;
+  margin-left: 3rem;
+  height: 28.9rem;
+}
