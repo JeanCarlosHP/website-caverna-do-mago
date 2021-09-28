@@ -39,7 +39,7 @@ header {
 }
 
 .bg-image {
-  background: url('./img/bg-hero.svg') no-repeat;
+  background: url('../img/bg-hero.svg') no-repeat;
   background-size: cover;
 
   height: 100vh;
