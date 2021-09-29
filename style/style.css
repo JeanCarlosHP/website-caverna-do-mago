@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   border: none;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
@@ -69,6 +70,7 @@ header.bg-dark {
   text-align: end;
   padding-right: 7.8rem;
 }
+
 .menu-modal.active {
   visibility: visible;
   opacity: 1;
@@ -85,19 +87,19 @@ header.bg-dark {
   z-index: 10;
 }
 
-.menu-modal h2 {
+.menu-modal .items-menu.show button,
+.menu-modal .items-menu.show a {
+  display: inline-block;
+
   color: var(--white);
+  background-color: transparent;
 
   font: bold 2rem 'Poppins';
 
   margin-top: 2.4rem;
 }
 
-.menu-modal h2:nth-child(1) {
-  margin-top: 9rem;
-}
-
-.menu-modal span {
+.menu-modal .polygon {
   display: inline-block;
   background-color: var(--yellow);
 
@@ -108,6 +110,41 @@ header.bg-dark {
   transform: rotate(-90deg);
 
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.menu-modal .polygon.open {
+  transform: rotate(180deg);
+}
+
+.menu-modal .products-menu .view-products a {
+  display: none;
+}
+
+.menu-modal .products-menu .view-products.show a {
+  display: block;
+  font: normal 1.8rem 'Open Sans';
+  color: var(--white);
+
+  margin-top: 0.9rem;
+}
+
+.menu-modal .products-menu .view-products {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu-modal .items-menu {
+  display: none;
+}
+
+.menu-modal .products-menu .view-products.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-modal .items-menu.show {
+  display: block;
+  margin-top: 6rem;
 }
 
 /* Hero */
