@@ -107,13 +107,7 @@
 
 header .hamburger .hamburger-inner,
 header .hamburger .hamburger-inner::before,
-header .hamburger .hamburger-inner::after {
-  background-color: var(--yellow);
-
-  height: 3px;
-  width: 2.4rem;
-}
-
+header .hamburger .hamburger-inner::after,
 header .hamburger--collapse.is-active .hamburger-inner,
 header .hamburger--collapse.is-active .hamburger-inner::before,
 header .hamburger--collapse.is-active .hamburger-inner::after {
