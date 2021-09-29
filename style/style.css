@@ -29,10 +29,17 @@ header {
   align-items: center;
 
   height: 7.1rem;
-  width: calc(100% - 3rem);
+  width: 100%;
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 
   position: fixed;
   z-index: 400;
+}
+
+header.bg-dark {
+  background-color: var(--grey-dark);
 }
 
 .logo {
@@ -42,6 +49,8 @@ header {
   color: var(--yellow);
 }
 
+/* Background image of header and hero */
+
 .bg-image {
   background: url('../img/bg-hero.svg') no-repeat;
   background-size: cover;
@@ -50,12 +59,12 @@ header {
 }
 
 /* Menu Modal */
+
 .menu-modal {
   visibility: hidden;
   opacity: 0;
 
   top: 0;
-  transition: 0.2s;
 
   text-align: end;
   padding-right: 7.8rem;
